@@ -1,17 +1,15 @@
-# validacao_CPF_EMAIL_SENHA
-Sistema web simples e responsivo para validação de CPF, e-mail e senha utilizando HTML, CSS e JavaScript puro.
+# Validação de CPF, e-mail e senha
 
-# 🔐 Validação de CPF, Email e Senha
+Exercício de formulário no navegador, feito com HTML, CSS e JavaScript puro. A verificação de CPF confere os dígitos verificadores; a de e-mail e senha usa regras locais simples, sem consultar serviços externos.
 
-💻 Projeto web simples usando **HTML, CSS e JavaScript**.
+## Executar
 
-## 🚀 Funcionalidades
-- 🧾 Validação de CPF (formato)
-- 📧 Validação de e-mail
-- 🔒 Validação de senha
+Abra `index.html` em um navegador. Não há instalação ou servidor obrigatório. Os dados digitados são processados apenas na página; este projeto não cria contas nem envia os campos a uma API.
 
-## 🛠 Tecnologias
-- 🌐 HTML
-- 🎨 CSS
-- ⚙️ JavaScript
+## Regras e limites
 
+- CPF: aceita 11 dígitos com ou sem pontuação, rejeita sequências repetidas e verifica os dois dígitos finais.
+- E-mail: validação didática de formato, não comprova existência da caixa postal.
+- Senha: ao menos 8 caracteres, uma letra maiúscula e um número; a página não armazena nem autentica senhas.
+
+O arquivo inicial foi renomeado de `idex.html` para `index.html`. Não use esta validação isolada como controle de segurança de um sistema real: entradas precisam de validação também no servidor.
